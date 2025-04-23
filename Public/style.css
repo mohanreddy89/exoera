@@ -1,0 +1,69 @@
+
+body.signup-body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('movie_bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  padding: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+.left-panel {
+  flex: 1;
+  padding: 20px;
+}
+.left-panel .brand-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #a6b1ff;
+  text-shadow: 0 0 8px #a6b1ff;
+}
+.left-panel .tagline {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #eee;
+}
+.form-container {
+  flex: 1;
+  padding: 20px;
+}
+.form-container .form-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #c2c8ff;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input, button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+}
+input {
+  background: #222;
+  color: #fff;
+}
+button {
+  background: #6c63ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #574dcf;
+}
