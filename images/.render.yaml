@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: exoera
+    env: docker
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: ""
+    startCommand: ""

@@ -1,0 +1,15 @@
+FROM php:8.2-apache
+
+# Enable Apache mod_rewrite (optional but useful)
+RUN a2enmod rewrite
+
+# Copy app into Apache's public directory
+COPY ./Public /var/www/html
+
+# Copy other needed files (like db_conn.php)
+COPY ./db_conn.php /var/www/html/db_conn.php
+
+# Set permissions (optional, if needed)
+RUN chown -R www-data:www-data /var/www/html
+
+EXPOSE 80
